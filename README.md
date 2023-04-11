@@ -1,1 +1,4 @@
-# Course_python_pip
+# Game proyect
+
+cd game 
+execute main.py
