@@ -5,10 +5,9 @@ def choose_options():
   options = ('piedra', 'papel', 'tijera')
   user_option = input('piedra, papel o tijera => ')
   user_option = user_option.lower()
-
-  if not user_option in options:
+  
+  if validatye_option(user_option, options):
     print('esa opcion no es valida')
-    # continue
     return None, None
 
   computer_option = random.choice(options)
@@ -73,4 +72,8 @@ def run_game():
       print('El ganador es el usuario')
       break
 
+def validatye_option(option, list_possible_options):
+  return true if option in list_possible_options else false
+  
+  
 run_game()
